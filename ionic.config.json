@@ -1,5 +1,14 @@
 {
   "name": "bk",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+"watch": {
+"sass": ["src/*.scss","scss//*.scss"],
+"html": ["www//.html"],
+"livereload": [
+"www/**/.html",
+"www//*.js",
+"www//*.css"
+]
+}
 }

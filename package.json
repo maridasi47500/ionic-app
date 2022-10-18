@@ -3,13 +3,19 @@
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
+"ts":["./src/*.ts", "./src/**/*.ts"],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:ts": "tsc",
+    "build:scss": "sass --no-source-map src/yourgamename.scss yourgamename.css",
+    "watch:ts": "tsc --watch",
+    "watch:scss": "sass --watch src/yourgamename.scss yourgamename.css",
+    "watch": "npm run watch:ts && npm run watch:scss"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +39,7 @@
   "devDependencies": {
     "@angular/cli": "14.2.6",
     "@ionic/app-scripts": "1.1.4",
+    "gulp-tsc": "^1.3.2",
     "typescript": "2.0.9"
   },
   "description": "An Ionic project"
