@@ -1,11 +1,12 @@
 {
   "name": "bk",
   "integrations": {},
-  "type": "angular",
+  "typescript": true,
 "watch": {
-"sass": ["src/*.scss","scss//*.scss"],
+"sass": ["src/*.scss","scss//*.scss","scss/*.scss"],
 "html": ["www//.html"],
 "livereload": [
+"scss/*",
 "www/**/.html",
 "www//*.js",
 "www//*.css"
